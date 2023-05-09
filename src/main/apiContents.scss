@@ -1,0 +1,70 @@
+.apiContent {
+  width: 800px;
+  height: 1000px;
+  overflow-y: scroll;
+  padding: 0 10px 0 10px;
+  border: 1px solid #e4ef73;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #e4ef73;
+  }
+}
+
+.apiChild {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #e4ef73;
+  box-sizing: border-box;
+  margin: 10px 0;
+  &__click {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 0;
+  }
+  &__short {
+    div {
+      display: flex;
+      margin: 10px 0;
+    }
+  }
+  &__button {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #e4ef73;
+    font-size: 2rem;
+  }
+  input[type='checkbox']:checked + &__label {
+    background-color: #e4ef73;
+  }
+  input[type='checkbox'] + &__label {
+    border: 2px solid #e4ef73;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+  }
+}
+
+.apiChild-append {
+  padding: 20px;
+}
+
+.apiChild-append div {
+  display: flex;
+  margin: 10px 0 0 20px;
+}
+
+.apiLine {
+  text-align: end;
+  width: 60px;
+}
+
+//201f1c
+//e4ef73

@@ -1,0 +1,30 @@
+.alert {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  width: fit-content;
+  border: 1px double #e4ef73;
+  background-color: #201f1c;
+  padding: 10px;
+  text-align: center;
+  animation: slideIn 2s linear;
+  transform: translateX(150%);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(150%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+//e4ef73
+//201f1c
